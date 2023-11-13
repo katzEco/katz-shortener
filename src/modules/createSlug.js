@@ -40,7 +40,11 @@ async function CreateSlug(app) {
       try {
         newSlug.save()
         res.redirect(
-          '/?status=1&slug=' + req.protocol + '://' + req.get('host')
+          '/?status=1&slug=' +
+            req.protocol +
+            '://' +
+            req.get('host') +
+            `/${slug}`
         )
       } catch (err) {
         console.log(err)
