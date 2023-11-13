@@ -15,9 +15,9 @@ const IndexPage = `<!DOCTYPE html>
     <div class="container">
       <div class="main-card">
         <form action="/api/create" method="post">
-          <input type="text" placeholder="Enter your Link.." required />
+          <input type="text" placeholder="Enter your Link.." name="destination" required />
           <br />
-          <input type="text" placeholder="Enter slug.. (optional)" />
+          <input type="text" name="slug" placeholder="Enter slug.. (optional)" />
           <br />
           <button type="submit">Shorten!</button>
         </form>
