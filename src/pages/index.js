@@ -39,6 +39,13 @@ const IndexPage = `<!DOCTYPE html>
             confirmButtonText: "Close",
           });
         }
+      } else {
+        Swal.fire({
+          title: "Failed..",
+          text: rtnSlug,
+          icon: "error",
+          confirmButtonText: "Close",
+        });
       }
     </script>
   </body>
