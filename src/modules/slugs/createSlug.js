@@ -1,5 +1,5 @@
-const schema = require('./mongo/schema')
-const String = require('./string')
+const schema = require('../mongo/schema')
+const String = require('../string')
 
 async function CreateSlug(app) {
   app.post('/api/create', async (req, res) => {
